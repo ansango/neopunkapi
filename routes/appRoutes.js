@@ -12,7 +12,7 @@ const {
   sortByHighABV,
   deleteAllBeers,
   deleteBeer,
-  updateBeer,
+  updateURL,
 } = require("../controller/appController");
 
 const router = express.Router();
@@ -27,7 +27,7 @@ router.get("/beers/sort/high-abv", sortByHighABV);
 
 router.post("/addBeer", addBeer);
 
-router.put("/updateBeer/:id", updateBeer);
+router.put("/updateURL/:id", updateURL);
 
 router.delete("/deleteAllBeers", deleteAllBeers);
 router.delete("/deleteBeer/:id", deleteBeer);

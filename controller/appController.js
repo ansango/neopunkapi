@@ -44,24 +44,17 @@ const addBeer = async (req, res) => {
   }
 };
 
-const updateBeer = async (req, res) => {
-  /*try {
-    const beers = await Beer.find({}, "-__v");
-    const beerCode = req.params.id;
-    const foundBeer = beers.find((beer) => beer.id == beerCode);
-    if (foundBeer) {
-      await Beer.updateOne(foundBeer);
-      responses.success(res, {
-        msg: `Beer with id: ${beerCode} successfully updated`,
-      });
-    } else {
-      responses.notfound(res, {
-        error: `Beer with id: '${beerCode}' not found`,
-      });
-    }
+const updateURL = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const beer = await Beer.findByIdAndUpdate(id, {
+      imgURL: req.body.imgURL,
+    });
+    if (!beer) return responses.notfound(res);
+    return responses.success(res, beer);
   } catch (error) {
-    responses.error(res);
-  }*/
+    return responses.error(res);
+  }
 };
 
 const getAllBeers = async (req, res) => {
@@ -169,7 +162,7 @@ const deleteBeer = async (req, res) => {
 module.exports = {
   init,
   addBeer,
-  updateBeer,
+  updateURL,
   getAllBeers,
   getBeersByID,
   getBeerByName,
