@@ -11,6 +11,7 @@ const aux = ({
   sortDescById,
   sortAscByABV,
   sortDescByABV,
+  randomBeer,
 } = require("../utils/methods"));
 
 const init = (req, res) => {
@@ -20,9 +21,10 @@ const init = (req, res) => {
       description:
         "This is a Public API to query data on Brewdog craft beers brewed in 2020.",
       endPoints: {
+        getBeerByID: "/api/beer/id/:id",
+        getBeerByName: "/api/beer/name/:name",
+        getRandomBeer: "/api/beer/random",
         getAllBeers: "/api/beers",
-        getBeerByID: "/api/beers/id/:id",
-        getBeerByName: "/api/beers/:name",
         getBeersBySection: "/api/beers/section/:section",
         getBeersByStyle: "/api/beers/style/:style",
         sortByLowABV: "/api/beers/sort/low-abv",
@@ -85,6 +87,17 @@ const getBeerByName = async (req, res) => {
     const beer = await Beer.find({ name: name }, "-__v");
     if (!beer.length > 0) return responses.notfound(res);
     return responses.success(res, beer);
+  } catch (error) {
+    return responses.error(res);
+  }
+};
+
+const getRandomBeer = async (req, res) => {
+  try {
+    const beers = await Beer.find({}, "-__v");
+    const random = aux.randomBeer(beers);
+    if (!random) return responses.notfound(res);
+    return responses.success(res, random);
   } catch (error) {
     return responses.error(res);
   }
@@ -166,6 +179,7 @@ module.exports = {
   getAllBeers,
   getBeersByID,
   getBeerByName,
+  getRandomBeer,
   getBeersBySection,
   getBeersByStyle,
   sortByLowABV,

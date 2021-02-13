@@ -9,9 +9,10 @@ You can find the API at https://neopunkapi.herokuapp.com/ for FREE!
 ## endpoints :earth_africa: :earth_asia: :earth_americas:
 
 - Base URL: `https://neopunkapi.herokuapp.com/api/`,
+- Get a beer by name: `beer/name/:name`
+- Get a beer by id: `beer/id/:id`
+- Get a random beer: `beer/random`,
 - Get all beers: `beers`
-- Get a beer by name: `beers/:name`
-- Get a beer by id: `beers/id/:id`
 - Get all beers by section: `beers/section/:section`
 - Get all beers by section: `beers/style/:style`
 - Get all beers sorted by asc alcohol content: `beers/sort/low-abv`

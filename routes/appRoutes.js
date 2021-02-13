@@ -2,24 +2,26 @@ const express = require("express");
 
 const {
   init,
-  addBeer,
+  //addBeer,
   getAllBeers,
   getBeersByID,
   getBeerByName,
+  getRandomBeer,
   getBeersBySection,
   getBeersByStyle,
   sortByLowABV,
   sortByHighABV,
-  deleteAllBeers,
-  deleteBeer,
-  updateURL,
+  //deleteAllBeers,
+  //deleteBeer,
+  //updateURL,
 } = require("../controller/appController");
 
 const router = express.Router();
 router.get("/", init);
+router.get("/beer/id/:id", getBeersByID);
+router.get("/beer/name/:name", getBeerByName);
+router.get("/beer/random", getRandomBeer);
 router.get("/beers", getAllBeers);
-router.get("/beers/id/:id", getBeersByID);
-router.get("/beers/:name", getBeerByName);
 router.get("/beers/section/:section", getBeersBySection);
 router.get("/beers/style/:style", getBeersByStyle);
 router.get("/beers/sort/low-abv", sortByLowABV);

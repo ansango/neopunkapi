@@ -11,10 +11,15 @@ const sortAscByABV = (arr) => {
 const sortDescByABV = (arr) => {
   return arr.sort((a, b) => parseFloat(b.abv) - parseFloat(a.abv));
 };
+const randomBeer = (set) => {
+  let beers = Array.from(set);
+  return beers[Math.floor(Math.random() * beers.length)];
+};
 
 module.exports = {
   sortDescById,
   sortAscById,
   sortDescByABV,
   sortAscByABV,
+  randomBeer,
 };
