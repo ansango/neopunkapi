@@ -20,13 +20,13 @@ const init = (req, res) => {
       description:
         "This is a Public API to query data on Brewdog craft beers brewed in 2020.",
       endPoints: {
-        getAllBeers: "api/beers",
-        getBeerByID: "api/beers/id/:id",
-        getBeerByName: "api/beers/:name",
-        getBeersBySection: "api/beers/section/:section",
-        getBeersByStyle: "api/beers/style/:style",
-        sortByLowABV: "api/beers/sort/low-abv",
-        sortByHighABV: "api/beers/sort/high-abv",
+        getAllBeers: "/api/beers",
+        getBeerByID: "/api/beers/id/:id",
+        getBeerByName: "/api/beers/:name",
+        getBeersBySection: "/api/beers/section/:section",
+        getBeersByStyle: "/api/beers/style/:style",
+        sortByLowABV: "/api/beers/sort/low-abv",
+        sortByHighABV: "/api/beers/sort/high-abv",
       },
     });
   } catch (error) {
