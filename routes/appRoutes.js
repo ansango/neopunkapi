@@ -25,11 +25,11 @@ router.get("/beers/style/:style", getBeersByStyle);
 router.get("/beers/sort/low-abv", sortByLowABV);
 router.get("/beers/sort/high-abv", sortByHighABV);
 
-router.post("/addBeer", addBeer);
+//router.post("/addBeer", addBeer);
 
-router.put("/updateURL/:id", updateURL);
+//router.put("/updateURL/:id", updateURL);
 
-router.delete("/deleteAllBeers", deleteAllBeers);
-router.delete("/deleteBeer/:id", deleteBeer);
+//router.delete("/deleteAllBeers", deleteAllBeers);
+//router.delete("/deleteBeer/:id", deleteBeer);
 
 module.exports = router;

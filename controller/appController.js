@@ -34,7 +34,7 @@ const init = (req, res) => {
   }
 };
 
-const addBeer = async (req, res) => {
+/*const addBeer = async (req, res) => {
   try {
     const beer = new Beer(req.body);
     const newBeer = await beer.save();
@@ -42,9 +42,9 @@ const addBeer = async (req, res) => {
   } catch (error) {
     return responses.error(res);
   }
-};
+};*/
 
-const updateURL = async (req, res) => {
+/*const updateURL = async (req, res) => {
   try {
     const id = req.params.id;
     const beer = await Beer.findByIdAndUpdate(id, {
@@ -55,7 +55,7 @@ const updateURL = async (req, res) => {
   } catch (error) {
     return responses.error(res);
   }
-};
+};*/
 
 const getAllBeers = async (req, res) => {
   try {
@@ -139,16 +139,16 @@ const sortByHighABV = async (req, res) => {
   }
 };
 
-const deleteAllBeers = async (req, res) => {
+/*const deleteAllBeers = async (req, res) => {
   try {
     await Beer.deleteMany({});
     return responses.success(res, { msg: "deleted all beers" });
   } catch (error) {
     return responses.error(res);
   }
-};
+};*/
 
-const deleteBeer = async (req, res) => {
+/*const deleteBeer = async (req, res) => {
   try {
     const id = req.params.id;
     const beer = await Beer.findByIdAndDelete(id);
@@ -157,12 +157,12 @@ const deleteBeer = async (req, res) => {
   } catch (error) {
     return responses.error(res);
   }
-};
+};*/
 
 module.exports = {
   init,
-  addBeer,
-  updateURL,
+  //addBeer,
+  //updateURL,
   getAllBeers,
   getBeersByID,
   getBeerByName,
@@ -170,6 +170,6 @@ module.exports = {
   getBeersByStyle,
   sortByLowABV,
   sortByHighABV,
-  deleteAllBeers,
-  deleteBeer,
+  //deleteAllBeers,
+  //deleteBeer,
 };
