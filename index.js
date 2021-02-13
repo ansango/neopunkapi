@@ -15,6 +15,7 @@ app.use(morgan("dev"));
 app.use("/images", express.static(__dirname + "/images"));
 app.use("/", appRoutes);
 app.use("/api", appRoutes);
+app.disable("etag");
 
 mongoose
   .connect(process.env.MONGO_URI, {

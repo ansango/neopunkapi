@@ -3,15 +3,15 @@ const success = (res, msg) => {
 };
 
 const error = (res) => {
-  res.status(500).json({ msg: "Internal Server Error" });
+  res.status(500).json({ error: "Internal Server Error" });
 };
 
-const notfound = (res, msg) => {
-  res.status(404).json(msg);
+const notfound = (res) => {
+  res.status(404).json({ error: "Not Found" });
 };
 
 const forbidden = (res) => {
-  res.status(403).json({ msg: "Permission denied" });
+  res.status(403).json({ msg: "Permission Denied" });
 };
 
 module.exports = {

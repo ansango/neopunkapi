@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "_id": 1,
     "name": "punk-ipa",
     "subtitle": "post-modern-classic",
     "section": "headliners",
@@ -28,7 +28,7 @@
     "imgURL": ""
   },
   {
-    "id": 2,
+    "_id": 2,
     "name": "lost-lager",
     "subtitle": "lager-like-it-should_be",
     "section": "headliners",
@@ -49,7 +49,7 @@
     "imgURL": ""
   },
   {
-    "id": 3,
+    "_id": 3,
     "name": "hazy-jane",
     "subtitle": "new-england-ipa",
     "section": "headliners",
@@ -77,7 +77,7 @@
     "imgURL": ""
   },
   {
-    "id": 4,
+    "_id": 4,
     "name": "elvis-juice",
     "subtitle": "grape-fruit-infused-ipa",
     "section": "headliners",
@@ -105,7 +105,7 @@
     "imgURL": ""
   },
   {
-    "id": 5,
+    "_id": 5,
     "name": "pale-ale",
     "subtitle": "west-coast-classic",
     "section": "headliners",
@@ -126,7 +126,7 @@
     "imgURL": ""
   },
   {
-    "id": 6,
+    "_id": 6,
     "name": "clockwork-tangerine",
     "subtitle": "fresh-juicy-sessionable",
     "section": "headliners",
@@ -147,7 +147,7 @@
     "imgURL": ""
   },
   {
-    "id": 7,
+    "_id": 7,
     "name": "dead-pony-club",
     "subtitle": "saddle-up-for-session",
     "section": "headliners",
@@ -168,7 +168,7 @@
     "imgURL": ""
   },
   {
-    "id": 8,
+    "_id": 8,
     "name": "cloudwater",
     "subtitle": "new-england-ipa",
     "section": "collaborations",
@@ -189,7 +189,7 @@
     "imgURL": ""
   },
   {
-    "id": 9,
+    "_id": 9,
     "name": "northern-monk",
     "subtitle": "sessionable-new-england-ipa",
     "section": "collaborations",
@@ -210,7 +210,7 @@
     "imgURL": ""
   },
   {
-    "id": 10,
+    "_id": 10,
     "name": "modern-times",
     "subtitle": "west-coast-ipa",
     "section": "collaborations",
@@ -231,7 +231,7 @@
     "imgURL": ""
   },
   {
-    "id": 11,
+    "_id": 11,
     "name": "evil-twin",
     "subtitle": "sweet-coffee-nitro-stout",
     "section": "collaborations",
@@ -252,7 +252,7 @@
     "imgURL": ""
   },
   {
-    "id": 12,
+    "_id": 12,
     "name": "og-hazy",
     "subtitle": "new-england-ipa",
     "section": "amplified",
@@ -273,7 +273,7 @@
     "imgURL": ""
   },
   {
-    "id": 13,
+    "_id": 13,
     "name": "jack-hammer",
     "subtitle": "ruthless-india-pale-ale",
     "section": "amplified",
@@ -294,7 +294,7 @@
     "imgURL": ""
   },
   {
-    "id": 14,
+    "_id": 14,
     "name": "double-punk",
     "subtitle": "post-modern-classic-reimagined",
     "section": "amplified",
@@ -315,7 +315,7 @@
     "imgURL": ""
   },
   {
-    "id": 15,
+    "_id": 15,
     "name": "punk-af",
     "subtitle": "tropical-alcohol-free",
     "section": "alcohol-free",
@@ -353,7 +353,7 @@
     "imgURL": ""
   },
   {
-    "id": 16,
+    "_id": 16,
     "name": "nanny-state",
     "subtitle": "no-alcohol-no-compromise",
     "section": "alcohol-free",
@@ -381,7 +381,7 @@
     "imgURL": ""
   },
   {
-    "id": 17,
+    "_id": 17,
     "name": "lost-af",
     "subtitle": "alcohol-free-lager",
     "section": "alcohol-free",
