@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/images", express.static(__dirname + "/assets/images"));
+app.use("/images", express.static(__dirname + "/images"));
 app.use("/", appRoutes);
 app.use("/api", appRoutes);
 
